@@ -11,7 +11,7 @@ int FindMergeNode(Node headA, Node headB) {
    
    // Algorithm:
 		// 1. Find the length of the lists
-		// 2. Find the absolute difference of the lengths diff = |lenghtA - lenghtB|
+		// 2. Find the absolute difference of the lengths diff = |lengthA - lengthB|
 		// 3. Move the pointer on the longer list to as many as the difference
 		// 4. Then move step by step on each lists till the pointers has the same data value
 		
