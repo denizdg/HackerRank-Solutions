@@ -13,7 +13,7 @@ int FindMergeNode(Node headA, Node headB) {
 		// 1. Find the length of the lists
 		// 2. Find the absolute difference of the lengths diff = |lengthA - lengthB|
 		// 3. Move the pointer on the longer list to as many as the difference
-		// 4. Then move step by step on each list till the pointers has the same data value
+		// 4. Then move step by step on each list till the pointers have the same data value
 		
 		
 		Node tmpA = headA;
