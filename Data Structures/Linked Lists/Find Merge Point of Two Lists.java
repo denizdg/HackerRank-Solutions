@@ -22,23 +22,23 @@ int FindMergeNode(Node headA, Node headB) {
 		Node pointerA = headA;
 		Node pointerB = headB;
 		
-		int lenghtA = 0;
-		int lenghtB = 0;
+		int lengthA = 0;
+		int lengthB = 0;
 		int diff = 0;
 		
 		while(tmpA != null){
-			lenghtA++;
+			lengthA++;
 			tmpA = tmpA.next;
 		}
 		
 		while(tmpB != null){
-			lenghtB++;
+			lengthB++;
 			tmpB = tmpB.next;
 		}
 		
-		diff = Math.abs(lenghtA - lenghtB);
+		diff = Math.abs(lengthA - lengthB);
 		
-		if(lenghtA >= lenghtB)
+		if(lengthA >= lengthB)
 			for (int i = 0; i < diff; i++)
 				pointerA = pointerA.next;
 		else
