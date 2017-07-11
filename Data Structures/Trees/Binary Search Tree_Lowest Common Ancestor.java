@@ -10,12 +10,13 @@
 	Algorithm:
 		(Remember this is for binary search tree. That means the tree is in order.)
 		
-		If the root value is greater than all of the given value nodes
-			that means the common ancestor is on the left side
-		If the root value is smaller than all of the given value nodes
-			that means the common ancestor is on the right side
-		Otherwise, the given value nodes are located in the left and right side.
-		The only posibble common ancestor is the root node.
+		Examine the current node
+		If the current node's value greater than both value1 and value2
+			Examine the left child
+		If the current node's value less than both value1 and value2
+			Examine the right child
+		Otherwise
+			The current node is the lowest common ancestor
 */
 static Node lca(Node root,int v1,int v2)
 {
